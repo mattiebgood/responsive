@@ -27,8 +27,12 @@
 }
 
 .content {
-    background-color: #EAEDFO;
+    background-color: #EAEDF0;
     height: 600px;
+}
+
+.illustration {
+    width: 100%;
 }
 
 .sign-up {
@@ -59,11 +63,33 @@
     body{
         background-color: #F5CF8E;
     }
+    .sign-up,
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+        width: 50%;
+        }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-    body {
-        background-color: #B2D6FF;
+    .page {
+        width: 960px;
+        margin: 0;
+    }
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+        width: 33.3%;
+    }
+    .header {
+        height: 400px;
+    }
+    .sign-up {
+        height: 200px;
+        order: 1;
+    }
+    .content {
+        order:2;
     }
 }
